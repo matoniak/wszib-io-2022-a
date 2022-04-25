@@ -32,5 +32,14 @@ class Trojkaty {
         float c = Float.valueOf(args[2]);
         
         jakiTrojkat(a, b, c);
+
+	 float c = Float.valueOf(args[2]);
+
+                if (a < 0 || b < 0 || c < 0) {
+                    System.out.println("Długości boków trójkąta muszą być nieujemne!");
+                    System.exit(2);
+                }
+
+                jakiTrojkat(a, b, c);
     }
 }
